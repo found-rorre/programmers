@@ -29,14 +29,7 @@ class Solution {
 		for (Integer div : divisor) {
 			answer += div;
 		}
-		
-
         
-        
-        
-        
-        
-
         return answer;
     }
 }
