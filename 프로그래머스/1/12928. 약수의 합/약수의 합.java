@@ -25,7 +25,7 @@ class Solution {
                 }
                 break;
 		}
-		
+	
 		for (Integer div : divisor) {
 			answer += div;
 		}
