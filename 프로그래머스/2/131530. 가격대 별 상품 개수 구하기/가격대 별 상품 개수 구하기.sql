@@ -1,3 +1,6 @@
+-- TRUNCATE(PRICE, -4)  버림 함수 
+-- 노션에 정리해둔 SQL 함수를 참고해서 사용했다.
+
 SELECT
     TRUNCATE(PRICE, -4) AS PRICE_GROUP,
     COUNT(PRICE) AS PRODUCTS
