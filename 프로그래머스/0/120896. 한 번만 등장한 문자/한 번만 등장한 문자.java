@@ -1,28 +1,22 @@
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 class Solution {
-public String solution(String s) {
+    public String solution(String s) {
 
-        HashMap<String, Integer> hm = new HashMap();
-        ArrayList<String> answer = new ArrayList();
+        StringBuffer sb = new StringBuffer();
+        
+        Map<String, Integer> map = new HashMap();
+        Stream.of(s.split("")).forEach(str -> map.merge(str, 1, Integer::sum));
 
-        Stream.of(s.split("")).forEach(S -> hm.merge(S, 1, Integer::sum));
-
-        for (String key :  hm.keySet()){
-            if(hm.get(key) == 1){
-                answer.add(key);
+        for (String key : map.keySet()) {
+            if (map.get(key) == 1) {
+                sb.append(key);
             }
         }
 
-        Collections.sort(answer);
-
-        StringBuilder sb = new StringBuilder();
-        answer.forEach(sb::append);
-
-
-        return sb.toString();
+        return Stream.of(sb.toString().split("")).sorted().collect(Collectors.joining());
     }
 }

@@ -1,10 +1,10 @@
 # [level 0] 한 번만 등장한 문자 - 120896 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120896?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120896) 
 
 ### 성능 요약
 
-메모리: 79.4 MB, 시간: 2.77 ms
+메모리: 72.8 MB, 시간: 7.05 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 29일 14:33:12
+2024년 08월 16일 13:23:19
 
 ### 문제 설명
 
